@@ -1,0 +1,33 @@
+.header {
+  padding-bottom: 2rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.title {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
