@@ -1,14 +1,8 @@
-/* ───────────────────────────────────────────
-   Community / Gallery Section — Modernized
-   ─────────────────────────────────────────── */
-
 .community {
   max-width: 1280px;
   margin: 6rem auto 7rem;
   padding: 0 2rem;
 }
-
-/* ── Header ─────────────────────────────── */
 
 .header {
   text-align: center;
@@ -53,8 +47,6 @@
   color: var(--text-light, #6b7280);
 }
 
-/* ── Grid ───────────────────────────────── */
-
 .grid {
   display: grid;
   gap: 0.75rem;
@@ -65,8 +57,6 @@
     "hero c d"
     "e    f g";
 }
-
-/* ── Card ───────────────────────────────── */
 
 .card {
   position: relative;
@@ -95,7 +85,6 @@
   will-change: transform;
 }
 
-/* gradient overlay */
 .card::after {
   content: "";
   position: absolute;
@@ -109,8 +98,6 @@
   pointer-events: none;
   transition: opacity 0.4s ease;
 }
-
-/* ── Caption ────────────────────────────── */
 
 .caption {
   position: absolute;
@@ -146,8 +133,6 @@
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* ── Hover States ───────────────────────── */
-
 .card:hover .img,
 .card:focus-within .img {
   transform: scale(1.06);
@@ -163,14 +148,10 @@
   opacity: 0.9;
 }
 
-/* ── Focus ring for accessibility ───────── */
-
 .card:focus-visible {
   outline: 3px solid var(--primary, #c8553d);
   outline-offset: 3px;
 }
-
-/* ── Grid Slots ─────────────────────────── */
 
 .slot1 {
   grid-area: hero;
@@ -197,7 +178,6 @@
   grid-area: g;
 }
 
-/* hero card gets larger typography */
 .slot1 .capTitle {
   font-size: 1.65rem;
 }
@@ -205,8 +185,6 @@
 .slot1 .capTag {
   font-size: 0.75rem;
 }
-
-/* ── Responsive — Tablet ────────────────── */
 
 @media (max-width: 1024px) {
   .community {
@@ -234,8 +212,6 @@
     font-size: 1.5rem;
   }
 }
-
-/* ── Responsive — Mobile ────────────────── */
 
 @media (max-width: 640px) {
   .community {
@@ -282,8 +258,6 @@
     padding: 1.25rem 1.15rem 1rem;
   }
 }
-
-/* ── Reduced motion ─────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
   .img {

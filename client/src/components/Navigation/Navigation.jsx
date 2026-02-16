@@ -37,12 +37,14 @@ export default function Navigation() {
         </Link>
         <ul className={styles.links}>
           <li>
-            <Link to="/menu" className={isActive('/menu') ? styles.active : ''}>
-              Menu
+            <Link to="/" className={isActive('/') ? styles.active : ''}>
+              Accueil
             </Link>
           </li>
           <li>
-            <span className={styles.navLinkDisabled}>Livraison</span>
+            <Link to="/menu" className={isActive('/menu') ? styles.active : ''}>
+              Menu
+            </Link>
           </li>
           <li>
             <Link to="/contact" className={isActive('/contact') ? styles.active : ''}>
@@ -70,12 +72,14 @@ export default function Navigation() {
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ''}`}>
         <ul className={styles.mobileLinks}>
           <li>
-            <Link to="/menu" className={isActive('/menu') ? styles.active : ''}>
-              Menu
+            <Link to="/" className={isActive('/') ? styles.active : ''}>
+              Accueil
             </Link>
           </li>
           <li>
-            <span className={styles.navLinkDisabled}>Livraison</span>
+            <Link to="/menu" className={isActive('/menu') ? styles.active : ''}>
+              Menu
+            </Link>
           </li>
           <li>
             <Link to="/contact" className={isActive('/contact') ? styles.active : ''}>

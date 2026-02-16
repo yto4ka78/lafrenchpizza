@@ -157,7 +157,6 @@
   z-index: 1;
 }
 
-/* Burger: hidden on desktop */
 .burger {
   display: none;
   flex-direction: column;
@@ -186,7 +185,6 @@
   transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Mobile menu panel */
 .mobileMenu {
   display: none;
   position: absolute;

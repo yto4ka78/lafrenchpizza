@@ -1,6 +1,5 @@
 import styles from "./Contact.module.css";
 
-// Default values (replace with actual data)
 const CONTACT_DATA = {
   businessName: "LA FRENCH PIZZA",
   address: "113 rue du Faubourg Bannier",
@@ -15,9 +14,8 @@ const CONTACT_DATA = {
     Lundi: "Fermé",
   },
   mapUrl: "https://www.openstreetmap.org/?mlat=47.913624&mlon=1.899586&zoom=15",
-  // Координаты для карты (широта, долгота)
-  mapLat: 47.913624,  // Latitude (широта)
-  mapLon: 1.899586,   // Longitude (долгота)
+  mapLat: 47.913624,
+  mapLon: 1.899586,
   socialLinks: [
     { label: "Instagram", url: "https://instagram.com/lafrenchpizza" },
     { label: "Facebook", url: "https://facebook.com/lafrenchpizza" },
@@ -27,7 +25,6 @@ const CONTACT_DATA = {
 export default function Contact() {
   return (
     <>
-      {/* JSON-LD Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -69,7 +66,6 @@ export default function Contact() {
       />
 
       <div className={styles.page}>
-        {/* Hero Section */}
         <section className={styles.hero}>
           <div className={styles.container}>
             <h1 className={styles.heroTitle}>Emplacement & Contact</h1>
@@ -80,11 +76,9 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Main Content Section */}
         <section className={styles.mainContent}>
           <div className={styles.container}>
             <div className={styles.contentGrid}>
-              {/* Left: Contact + Hours — text on pizza image */}
               <div className={styles.rightColumn}>
                 <div className={styles.pizzaPanel}>
                   <h2 className={styles.pizzaPanelTitle}>Contactez-nous</h2>
@@ -137,7 +131,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Right: Map + Address */}
               <div className={styles.leftColumn}>
                 <div className={styles.card}>
                   <h2 className={styles.cardTitle}>Notre adresse</h2>

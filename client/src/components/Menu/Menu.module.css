@@ -1,11 +1,10 @@
-/* Preview on home page — only a few pizzas */
 .previewSection {
   padding: 4rem 0;
   background: var(--bg);
 }
 
 .previewTitle {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: clamp(2rem, 4vw, 2.75rem);
   color: var(--secondary);
   margin-bottom: 0.5rem;
@@ -40,7 +39,9 @@
   padding: 0.6rem 1.25rem;
   border: 2px solid var(--primary);
   border-radius: 8px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .previewLink:hover {
@@ -48,7 +49,6 @@
   color: var(--white);
 }
 
-/* Full menu page */
 .page {
   padding: 0 0 4rem;
   background: var(--bg);
@@ -60,20 +60,18 @@
   padding: 0 2rem;
 }
 
-/* Section */
 .section {
   margin-bottom: 3.5rem;
 }
 
 .sectionTitle {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: clamp(2rem, 4vw, 2.75rem);
   color: var(--secondary);
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
 }
 
-/* Base (tomate / crème) */
 .baseBlock {
   margin-bottom: 2.5rem;
 }
@@ -105,7 +103,6 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-/* Pizza grid */
 .pizzaGrid {
   list-style: none;
   display: grid;
@@ -121,7 +118,9 @@
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .card:hover {
@@ -146,7 +145,7 @@
 }
 
 .cardName {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: 1.25rem;
   color: var(--primary);
   margin-bottom: 0.35rem;
@@ -160,7 +159,6 @@
   margin-bottom: 0.75rem;
 }
 
-/* Price strip — French flag style */
 .priceStrip {
   display: flex;
   border-radius: 6px;
@@ -189,7 +187,6 @@
   background: #ef4135;
 }
 
-/* Compose ta pizza */
 .composeSection {
   background: var(--secondary);
   color: var(--white);
@@ -199,7 +196,7 @@
 }
 
 .composeTitle {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: var(--white);
@@ -217,7 +214,6 @@
   color: var(--accent);
 }
 
-/* Promotions */
 .promoSection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -237,7 +233,7 @@
 }
 
 .promoCard::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -251,7 +247,7 @@
 }
 
 .promoTitle {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: 1.25rem;
   color: var(--secondary);
   margin-bottom: 0.5rem;
@@ -283,7 +279,220 @@
   line-height: 1.45;
 }
 
-/* Sizes legend */
+.drinksSection {
+  padding: 0rem 2rem 4rem 2rem;
+}
+
+.drinksHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.drinksTitle {
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: #1a1410;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.drinksSubtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+.drinksDivider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ea580c, transparent);
+  margin: 0 auto;
+}
+
+.drinksChips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+  padding: 0;
+}
+
+.drinkChip {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.drinkChip:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+}
+
+.drinkImageWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.drinkImage {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  filter: contrast(1.05) saturate(1.05);
+  display: block;
+}
+
+.drinkBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.drinkCardBody {
+  padding: 1rem 1.25rem;
+}
+
+.drinkCardName {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.25rem;
+  color: #111;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+.drinkCardDesc {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 0.75rem 0;
+}
+
+.drinkCardBody .priceStrip {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.drinkCardBody .priceStrip span {
+  flex: 1;
+  padding: 0.4rem 0.35rem;
+  color: #fff;
+}
+
+.price_canette {
+  background: #0055a4;
+}
+
+.price_bouteille {
+  background: #fff;
+  color: var(--secondary) !important;
+}
+
+.price_bouteille2l {
+  background: #ef4135;
+}
+
+.pricingCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricingCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: white;
+  border: 2px solid #f3f4f6;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.pricingCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #ea580c;
+  box-shadow: 0 12px 32px rgba(234, 88, 12, 0.2);
+}
+
+.pricingCardRecommended {
+  border-color: #ea580c;
+  border-width: 3px;
+  background: linear-gradient(135deg, #fff 0%, #fef3f2 100%);
+  transform: scale(1.05);
+}
+
+.pricingCardRecommended:hover {
+  transform: translateY(-8px) scale(1.08);
+}
+
+.recommendedBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ea580c;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+.pricingLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.pricingAmount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.pricingValue {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1a1410;
+  line-height: 1;
+}
+
+.pricingCurrency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ea580c;
+}
+
 .sizesLegend {
   display: flex;
   flex-wrap: wrap;
@@ -300,7 +509,6 @@
   color: var(--secondary);
 }
 
-/* Footnotes */
 .footnotes {
   display: flex;
   flex-wrap: wrap;

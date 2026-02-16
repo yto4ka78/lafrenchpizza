@@ -1,32 +1,98 @@
-import { Link } from 'react-router-dom';
-import styles from './Hero.module.css';
+import { Link } from "react-router-dom";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <div className={styles.overlay}></div>
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <h1>
-            Pizza au<br />
-            levain faite<br />
-            <em>correctement</em>
-          </h1>
-          <p className={styles.tagline}>
-            Pâte fermentée 72 heures. Cuite au feu de bois à 480°C. Vin naturel au comptoir. Bienvenue sans réservation.
-          </p>
-          <div className={styles.ctas}>
-            <Link to="/menu" className={styles.btnPrimary}>
-              <span>Commander en ligne</span>
-            </Link>
-            <Link to="/menu" className={styles.btnSecondary}>Voir le menu</Link>
-          </div>
+      {/* Dark wooden texture background */}
+      <div className={styles.backgroundImage}></div>
+
+      {/* Decorative food elements overlay */}
+      <div className={styles.foodElements}>
+        {/* Decorative knife (right side) */}
+        <div className={`${styles.utensil} ${styles.knife}`}>
+          <svg viewBox="0 0 24 64" fill="none">
+            <line
+              x1="12"
+              y1="0"
+              x2="12"
+              y2="64"
+              stroke="currentColor"
+              strokeWidth="2"
+            />
+            <path d="M5 20 L19 20 L12 0 Z" fill="currentColor" opacity="0.6" />
+          </svg>
         </div>
       </div>
-      <div className={styles.badge}>
-        <span>Ouvert</span>
-        <strong>Aujourd'hui</strong>
+
+      {/* Main content */}
+      <div className={styles.container}>
+        <img
+          src="https://res.cloudinary.com/dcuqusnsc/image/upload/v1771252685/line_3_pe4f2e.png"
+          alt=""
+          className={styles.decorativePatternLeft}
+        />
+        <div className={styles.content}>
+          {/* Main heading */}
+          <div className={styles.offer}>
+            <span className={styles.smallLabel}>Offre spéciale</span>
+            <h1 className={styles.bigOffer}>Pizza achetée</h1>
+            <span className={styles.freeEquals}>=</span>
+            <div className={styles.freeLine}>
+              <span className={styles.freeNumber}>1</span>
+              <span className={styles.freeText}>Offerte</span>
+            </div>
+          </div>
+
+          {/* Divider with text */}
+          <div className={styles.dividerSection}>
+            <div className={styles.dividerLine}></div>
+            <p className={styles.subtitle}>Pizzas faites maison</p>
+            <div className={styles.dividerLine}></div>
+          </div>
+
+          {/* Quality subtitle */}
+          <p className={styles.quality}>Ingrédients de qualité</p>
+
+          {/* CTA buttons */}
+          <div className={styles.ctaButtons}>
+            <Link to="/menu" className={styles.primaryButton}>Voir le menu</Link>
+            <Link to="/contact" className={styles.secondaryButton}>Nos coordonnées</Link>
+          </div>
+          {/* Phone section */}
+          <div className={styles.phoneSection}>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
+                fill="currentColor"
+              />
+            </svg>
+            <a href="tel:0980889898" className={styles.phoneLink}>
+              09 80 88 98 98
+            </a>
+          </div>
+
+          {/* Footnote */}
+          <p className={styles.footnote}>
+            *Offre valable uniquement sur les pizzas seniors, sur place ou à
+            emporter.
+          </p>
+        </div>
+        <img
+          src="https://res.cloudinary.com/dcuqusnsc/image/upload/v1771252685/line_3_pe4f2e.png"
+          alt=""
+          className={styles.decorativePatternRight}
+        />
       </div>
+
+      {/* Subtle overlay gradient */}
+      <div className={styles.overlay}></div>
     </section>
   );
 }

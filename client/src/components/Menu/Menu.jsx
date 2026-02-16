@@ -6,6 +6,7 @@ import {
   footnotes,
   sizes,
   featuredPizzas,
+  drinks,
 } from "../../data/menuData";
 import styles from "./Menu.module.css";
 
@@ -56,7 +57,6 @@ export default function Menu({ preview = false }) {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        {/* Sections: Classiques & Spécialités */}
         {menuSections.map((section) => (
           <section key={section.id} className={styles.section}>
             <h2 className={styles.sectionTitle}>{section.title}</h2>
@@ -97,14 +97,43 @@ export default function Menu({ preview = false }) {
           </section>
         ))}
 
-        {/* Compose ta pizza */}
+        <section className={styles.drinksSection}>
+          <div className={styles.drinksHeader}>
+            <h2 className={styles.drinksTitle}>{drinks.title}</h2>
+            <p className={styles.drinksSubtitle}>{drinks.subtitle}</p>
+            <div className={styles.drinksDivider}></div>
+          </div>
+
+          <div className={styles.drinksChips}>
+            {drinks.items.map((item, index) => (
+              <div key={index} className={styles.drinkChip}>
+                <div className={styles.drinkImageWrap}>
+                  <img 
+                    src={item.image} 
+                    alt={item.name} 
+                    className={styles.drinkImage}
+                  />
+                </div>
+                <div className={styles.drinkCardBody}>
+                  <h3 className={styles.drinkCardName}>{item.name}</h3>
+                  <p className={styles.drinkCardDesc}>Canette fraîche</p>
+                  <div className={styles.priceStrip}>
+                    <span className={styles.price_canette}>Canette 2€</span>
+                    <span className={styles.price_bouteille}>1.5L 3€</span>
+                    <span className={styles.price_bouteille2l}>2L 3.5€</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section className={styles.composeSection}>
           <h2 className={styles.composeTitle}>{composePizza.title}</h2>
           <p className={styles.composeDesc}>{composePizza.description}</p>
           <p className={styles.composePrices}>{composePizza.prices}</p>
         </section>
 
-        {/* Promotions */}
         <section className={styles.promoSection}>
           {promotions.map((promo) => (
             <div key={promo.id} className={styles.promoCard}>
@@ -116,7 +145,6 @@ export default function Menu({ preview = false }) {
           ))}
         </section>
 
-        {/* Sizes legend */}
         <div className={styles.sizesLegend}>
           {sizes.map((s) => (
             <span key={s.name} className={styles.sizeBadge}>
@@ -125,7 +153,6 @@ export default function Menu({ preview = false }) {
           ))}
         </div>
 
-        {/* Footnotes */}
         <div className={styles.footnotes}>
           {footnotes.map((note, i) => (
             <span key={i} className={styles.footnote}>{note}</span>

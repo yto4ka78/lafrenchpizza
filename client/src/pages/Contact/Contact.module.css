@@ -9,7 +9,6 @@
   padding: 0 2rem;
 }
 
-/* Hero Section */
 .hero {
   padding: 8rem 0 6rem;
   text-align: center;
@@ -45,7 +44,6 @@
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Contact Info Block */
 .contactInfoBlock {
   padding: 3rem 0;
   background: var(--white);
@@ -104,7 +102,6 @@
   text-decoration: underline;
 }
 
-/* Main Content */
 .mainContent {
   padding: 2rem 0 4rem;
 }
@@ -116,7 +113,6 @@
   margin-bottom: 4rem;
 }
 
-/* Right column: contact & hours card */
 .rightColumn {
   display: flex;
   min-height: 0;
@@ -244,7 +240,6 @@
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-/* Cards */
 .card {
   background: var(--white);
   border-radius: 8px;
@@ -261,7 +256,6 @@
   letter-spacing: -0.01em;
 }
 
-/* Map */
 .mapContainer {
   margin-bottom: 1.5rem;
   border-radius: 12px;
@@ -304,7 +298,6 @@
   text-decoration: underline;
 }
 
-/* Contact Methods */
 .contactMethods {
   display: flex;
   flex-direction: column;
@@ -342,7 +335,6 @@
   color: var(--secondary);
 }
 
-/* Social Links */
 .socialSection {
   padding-top: 1.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -372,7 +364,6 @@
   text-decoration: underline;
 }
 
-/* Opening Hours */
 .hoursList {
   display: flex;
   flex-direction: column;
@@ -410,7 +401,6 @@
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .contentGrid {
     grid-template-columns: 1fr;
