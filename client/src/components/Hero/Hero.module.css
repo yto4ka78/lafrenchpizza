@@ -507,6 +507,11 @@
     padding: 3rem 1.5rem;
   }
 
+  .decorativePatternLeft,
+  .decorativePatternRight {
+    display: none;
+  }
+
   .topLeft {
     width: 6rem;
     height: 6rem;
@@ -628,15 +633,7 @@
 
   .decorativePatternLeft,
   .decorativePatternRight {
-    max-height: 1rem;
-  }
-
-  .decorativePatternLeft {
-    left: 1.5rem;
-  }
-
-  .decorativePatternRight {
-    right: 1.5rem;
+    display: none;
   }
 
   .quality {
