@@ -344,15 +344,12 @@
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  box-shadow: none;
+  transition: transform 0.25s ease;
 }
 
 .drinkChip:hover {
   transform: translateY(-6px);
-  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
 }
 
 .drinkImageWrap {
@@ -517,6 +514,64 @@
   }
 
   .pizzaGrid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1.5rem;
+    padding: 0 0 0.5rem 0;
+    margin: 0 -1.5rem;
+    padding-right: 1.5rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .pizzaGrid::before {
+    content: "";
+    flex: 0 0 0.75rem;
+    scroll-snap-align: start;
+  }
+
+  .pizzaGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pizzaGrid li {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    max-width: 280px;
+  }
+
+  .drinksChips {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1.5rem;
+    padding: 0 0 0.5rem 0;
+    margin: 0 -1.5rem;
+    padding-right: 1.5rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .drinksChips::before {
+    content: "";
+    flex: 0 0 0.75rem;
+    scroll-snap-align: start;
+  }
+
+  .drinksChips::-webkit-scrollbar {
+    display: none;
+  }
+
+  .drinksChips > div {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    max-width: 280px;
   }
 }

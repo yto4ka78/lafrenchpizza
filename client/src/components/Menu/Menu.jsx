@@ -3,6 +3,7 @@ import {
   menuSections,
   featuredPizzas,
   drinks,
+  desserts,
   sizes,
 } from "../../data/menuData";
 import styles from "./Menu.module.css";
@@ -135,6 +136,49 @@ export default function Menu({ preview = false }) {
                     <span className={styles.price_canette}>Canette 2€</span>
                     <span className={styles.price_bouteille}>1.5L 3€</span>
                     <span className={styles.price_bouteille2l}>2L 3.5€</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.drinksSection}>
+          <div className={styles.drinksHeader}>
+            <h2 className={styles.drinksTitle}>{desserts.title}</h2>
+            <p className={styles.drinksSubtitle}>{desserts.subtitle}</p>
+            <div className={styles.drinksDivider}></div>
+          </div>
+
+          <div className={styles.drinksChips}>
+            {desserts.items.map((item, index) => (
+              <div key={index} className={styles.drinkChip}>
+                <div className={styles.drinkImageWrap}>
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className={styles.drinkImage}
+                    loading="lazy"
+                  />
+                </div>
+                <div className={styles.drinkCardBody}>
+                  <h3 className={styles.drinkCardName}>{item.name}</h3>
+                  <p className={styles.drinkCardDesc}>
+                    {item.description || "Dessert gourmand"}
+                  </p>
+                  <div className={styles.priceStrip}>
+                    {item.prices.map((price, priceIndex) => (
+                      <span
+                        key={price}
+                        className={
+                          priceIndex % 2 === 0
+                            ? styles.price_canette
+                            : styles.price_bouteille
+                        }
+                      >
+                        {price}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>

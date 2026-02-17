@@ -274,11 +274,6 @@ export const drinks = {
   subtitle: "Boissons fraîches pour accompagner votre pizza",
   items: [
     {
-      name: "Coca-Cola",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771269915/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_20_02_kamsir.png",
-    },
-    {
       name: "Pepsi",
       image:
         "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270414/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_33_26_ldipbf.png",
@@ -309,6 +304,11 @@ export const drinks = {
         "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270151/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_28_47_gjtmpd.png",
     },
     {
+      name: "Coca-Cola",
+      image:
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771269915/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_20_02_kamsir.png",
+    },
+    {
       name: "Oasis",
       image:
         "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270216/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_30_07_iu1uj3.png",
@@ -323,6 +323,41 @@ export const drinks = {
     { size: "Canette 33 cl", price: "2,00", recommended: false },
     { size: "Bouteille 1,5L", price: "3,00", recommended: true },
     { size: "Bouteille 2L", price: "3,50", recommended: false },
+  ],
+};
+
+export const desserts = {
+  title: "Desserts",
+  subtitle: "Une touche sucrée pour finir votre repas",
+  items: [
+    {
+      name: "Haagen-Dazs",
+      description: "Parfums au choix",
+      image:
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_03_04_fb6vcp.png",
+      prices: ["150ml 3.50€", "500ml 6.50€"],
+    },
+    {
+      name: "Tiramisu",
+      description: "Parfums au choix",
+      image:
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_08_38_w4tcxz.png",
+      prices: ["3.00€"],
+    },
+    {
+      name: "Tarte daim",
+      description: "",
+      image:
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_21_41_ttedra.png",
+      prices: ["3.00€"],
+    },
+    {
+      name: "Muffins",
+      description: "",
+      image:
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_24_51_akl6ug.png",
+      prices: ["3.00€"],
+    },
   ],
 };
 
