@@ -432,7 +432,6 @@
   z-index: 3;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -473,7 +472,6 @@
   }
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .hero {
     min-height: 90vh;
@@ -672,7 +670,7 @@
   }
 
   .freeNumber {
-    font-size: clamp(2.65rem, 9.8vw, 3.95rem);
+    font-size: clamp(3.65rem, 9.8vw, 3.95rem);
   }
 
   .freeText {

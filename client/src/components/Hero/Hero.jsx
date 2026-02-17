@@ -4,12 +4,9 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      {/* Dark wooden texture background */}
       <div className={styles.backgroundImage}></div>
 
-      {/* Decorative food elements overlay */}
       <div className={styles.foodElements}>
-        {/* Decorative knife (right side) */}
         <div className={`${styles.utensil} ${styles.knife}`}>
           <svg viewBox="0 0 24 64" fill="none">
             <line
@@ -25,7 +22,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Main content */}
       <div className={styles.container}>
         <img
           src="https://res.cloudinary.com/dcuqusnsc/image/upload/v1771252685/line_3_pe4f2e.png"
@@ -33,7 +29,6 @@ export default function Hero() {
           className={styles.decorativePatternLeft}
         />
         <div className={styles.content}>
-          {/* Main heading */}
           <div className={styles.offer}>
             <span className={styles.smallLabel}>Offre spéciale</span>
             <h1 className={styles.bigOffer}>Pizza achetée</h1>
@@ -44,22 +39,18 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Divider with text */}
           <div className={styles.dividerSection}>
             <div className={styles.dividerLine}></div>
             <p className={styles.subtitle}>Pizzas faites maison</p>
             <div className={styles.dividerLine}></div>
           </div>
 
-          {/* Quality subtitle */}
           <p className={styles.quality}>Ingrédients de qualité</p>
 
-          {/* CTA buttons */}
           <div className={styles.ctaButtons}>
             <Link to="/menu" className={styles.primaryButton}>Voir le menu</Link>
             <Link to="/contact" className={styles.secondaryButton}>Nos coordonnées</Link>
           </div>
-          {/* Phone section */}
           <div className={styles.phoneSection}>
             <svg
               width="20"
@@ -78,7 +69,6 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Footnote */}
           <p className={styles.footnote}>
             *Offre valable uniquement sur les pizzas seniors, sur place ou à
             emporter.
@@ -91,7 +81,6 @@ export default function Hero() {
         />
       </div>
 
-      {/* Subtle overlay gradient */}
       <div className={styles.overlay}></div>
     </section>
   );

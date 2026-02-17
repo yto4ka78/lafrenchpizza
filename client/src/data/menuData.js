@@ -276,47 +276,47 @@ export const drinks = {
     {
       name: "Coca-Cola",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256064/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_24_40_koqu1z.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771269915/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_20_02_kamsir.png",
     },
     {
       name: "Pepsi",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256065/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_21_42_bvlvtu.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270414/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_33_26_ldipbf.png",
     },
     {
       name: "Pepsi Max",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256287/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_38_00_bdgva6.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270509/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_35_00_m1xfym.png",
     },
     {
       name: "7up",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256067/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_33_59_a16lqw.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771269913/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_24_35_maeqxj.png",
     },
     {
       name: "Sprite",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256539/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_42_10_t2x1kp.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270015/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_26_19_t0956j.png",
     },
     {
       name: "Fanta",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256065/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_26_28_eyoy4e.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270083/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_27_32_jkcgnl.png",
     },
     {
       name: "Lipton Ice Tea",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256065/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_28_18_ofdfs8.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270151/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_28_47_gjtmpd.png",
     },
     {
       name: "Oasis",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256064/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_30_33_mp6vec.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270216/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_30_07_iu1uj3.png",
     },
     {
       name: "Orangina",
       image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771256067/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._16_32_21_nahhqk.png",
+        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270317/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_31_40_xsjjde.png",
     },
   ],
   prices: [

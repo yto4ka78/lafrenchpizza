@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 import {
   menuSections,
-  composePizza,
-  promotions,
-  footnotes,
-  sizes,
   featuredPizzas,
   drinks,
+  sizes,
 } from "../../data/menuData";
 import styles from "./Menu.module.css";
+import FormulesInfos from "./FormulesInfos.jsx";
 
 export default function Menu({ preview = false }) {
   if (preview) {
@@ -17,7 +15,8 @@ export default function Menu({ preview = false }) {
         <div className={styles.container}>
           <h2 className={styles.previewTitle}>Quelques pizzas</h2>
           <p className={styles.previewSubtitle}>
-            Découvrez une sélection de nos créations. Tout le menu sur la page Menu.
+            Découvrez une sélection de nos créations. Tout le menu sur la page
+            Menu.
           </p>
           <ul className={styles.previewGrid}>
             {featuredPizzas.slice(0, 4).map((pizza) => (
@@ -35,7 +34,10 @@ export default function Menu({ preview = false }) {
                   <p className={styles.cardIngredients}>{pizza.ingredients}</p>
                   <div className={styles.priceStrip}>
                     {sizes.map((s) => (
-                      <span key={s.name} className={styles[`price_${s.name.toLowerCase()}`]}>
+                      <span
+                        key={s.name}
+                        className={styles[`price_${s.name.toLowerCase()}`]}
+                      >
                         {s.name} {s.price}€
                       </span>
                     ))}
@@ -64,7 +66,12 @@ export default function Menu({ preview = false }) {
             {section.bases.map((base) => (
               <div key={base.id} className={styles.baseBlock}>
                 <h3 className={styles.baseTitle}>
-                  <span className={base.icon === 'tomate' ? styles.tomate : styles.creme} aria-hidden />
+                  <span
+                    className={
+                      base.icon === "tomate" ? styles.tomate : styles.creme
+                    }
+                    aria-hidden
+                  />
                   {base.name}
                 </h3>
                 <ul className={styles.pizzaGrid}>
@@ -80,10 +87,17 @@ export default function Menu({ preview = false }) {
                       </div>
                       <div className={styles.cardBody}>
                         <h4 className={styles.cardName}>{pizza.name}</h4>
-                        <p className={styles.cardIngredients}>{pizza.ingredients}</p>
+                        <p className={styles.cardIngredients}>
+                          {pizza.ingredients}
+                        </p>
                         <div className={styles.priceStrip}>
                           {sizes.map((s) => (
-                            <span key={s.name} className={styles[`price_${s.name.toLowerCase()}`]}>
+                            <span
+                              key={s.name}
+                              className={
+                                styles[`price_${s.name.toLowerCase()}`]
+                              }
+                            >
                               {s.name} {s.price}€
                             </span>
                           ))}
@@ -108,9 +122,9 @@ export default function Menu({ preview = false }) {
             {drinks.items.map((item, index) => (
               <div key={index} className={styles.drinkChip}>
                 <div className={styles.drinkImageWrap}>
-                  <img 
-                    src={item.image} 
-                    alt={item.name} 
+                  <img
+                    src={item.image}
+                    alt={item.name}
                     className={styles.drinkImage}
                   />
                 </div>
@@ -128,36 +142,7 @@ export default function Menu({ preview = false }) {
           </div>
         </section>
 
-        <section className={styles.composeSection}>
-          <h2 className={styles.composeTitle}>{composePizza.title}</h2>
-          <p className={styles.composeDesc}>{composePizza.description}</p>
-          <p className={styles.composePrices}>{composePizza.prices}</p>
-        </section>
-
-        <section className={styles.promoSection}>
-          {promotions.map((promo) => (
-            <div key={promo.id} className={styles.promoCard}>
-              <h3 className={styles.promoTitle}>{promo.title}</h3>
-              <p className={styles.promoText}>{promo.text}</p>
-              {promo.price && <span className={styles.promoPrice}>{promo.price}</span>}
-              {promo.footnote && <p className={styles.promoFootnote}>{promo.footnote}</p>}
-            </div>
-          ))}
-        </section>
-
-        <div className={styles.sizesLegend}>
-          {sizes.map((s) => (
-            <span key={s.name} className={styles.sizeBadge}>
-              <strong>{s.name}</strong> {s.cm}
-            </span>
-          ))}
-        </div>
-
-        <div className={styles.footnotes}>
-          {footnotes.map((note, i) => (
-            <span key={i} className={styles.footnote}>{note}</span>
-          ))}
-        </div>
+        <FormulesInfos />
       </div>
     </div>
   );
