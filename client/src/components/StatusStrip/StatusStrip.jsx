@@ -4,7 +4,7 @@ const statusItems = [
   { label: 'Statut', value: 'Ouvert maintenant', isOpen: true },
   { label: 'Temps d\'attente', value: '~20 min', isOpen: false },
   { label: 'À emporter', value: 'Disponible', isOpen: false },
-  { label: 'Livraison', value: 'Rayon de 3 km', isOpen: false },
+  { label: 'Four à bois', value: '480°C', isOpen: false },
 ];
 
 export default function StatusStrip() {

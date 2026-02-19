@@ -154,6 +154,21 @@
   color: rgba(0, 0, 0, 0.58);
 }
 
+.orderCta {
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+.orderCta a {
+  color: var(--primary, #c23b22);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.orderCta a:hover {
+  text-decoration: underline;
+}
+
 .meta {
   display: grid;
   grid-template-columns: auto 1fr;

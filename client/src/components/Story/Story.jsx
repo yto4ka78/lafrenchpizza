@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Story.module.css';
 
 const values = [
@@ -11,7 +12,19 @@ export default function Story() {
   return (
     <section className={styles.story} id="about">
       <div className={styles.image}>
-        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=750&fit=crop" alt="Blé et farine" />
+        <picture>
+          <source
+            media="(min-width: 1025px)"
+            srcSet="/another/storyPhoto_1000px.webp"
+          />
+          <img
+            src="/another/storyPhoto_764px.webp"
+            alt="Blé et farine"
+            loading="lazy"
+            width={600}
+            height={750}
+          />
+        </picture>
       </div>
       <div className={styles.content}>
         <h2>Un lieu de quartier sans compromis</h2>
@@ -25,6 +38,9 @@ export default function Story() {
             <li key={index}>{value}</li>
           ))}
         </ul>
+        <p className={styles.cta}>
+          <Link to="/about">Découvrir notre histoire →</Link>
+        </p>
       </div>
     </section>
   );

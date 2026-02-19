@@ -12,9 +12,12 @@
 .hero {
   position: relative;
   padding: 10rem 0;
-  background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&h=1080&fit=crop");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(26, 20, 16, 0.75),
+      rgba(26, 20, 16, 0.6)
+    ),
+    url("/another/lafrenchpizza_background_restaurant.webp") center/cover no-repeat;
   background-color: #1a1410;
   text-align: center;
   min-height: 60vh;
@@ -23,23 +26,25 @@
   justify-content: center;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
 .heroContent {
   position: relative;
   z-index: 2;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
+  opacity: 0;
+  animation: heroTextIn 0.7s ease-out forwards;
+}
+
+@keyframes heroTextIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .heroDecor {
@@ -180,9 +185,7 @@
       rgba(26, 20, 16, 0.92),
       rgba(26, 20, 16, 0.88)
     ),
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&h=1080&fit=crop");
-  background-size: cover;
-  background-position: center;
+    url("/another/lafrenchpizza_background_restaurant.webp") center/cover no-repeat;
   text-align: center;
   overflow: hidden;
 }
@@ -255,6 +258,13 @@
   line-height: 1.5;
 }
 
+.heroCtaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
 .heroCtaButton {
   display: inline-block;
   padding: 0.875rem 2rem;
@@ -273,6 +283,24 @@
   background: #a8321d;
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(194, 59, 34, 0.3);
+}
+
+.heroCtaButtonSecondary {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.heroCtaButtonSecondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--white);
 }
 
 @media (max-width: 980px) {

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./FormulesInfos.module.css";
 
 export default function FormulesInfos() {
@@ -56,6 +57,10 @@ export default function FormulesInfos() {
         </article>
       </div>
 
+      <p className={styles.orderCta}>
+        <Link to="/contact">Commander par téléphone →</Link>
+      </p>
+
       <div className={styles.meta}>
         <div className={styles.metaBlock}>
           <h4 className={styles.metaTitle}>Tailles</h4>
@@ -71,7 +76,6 @@ export default function FormulesInfos() {
             </li>
           </ul>
         </div>
-
         <div className={styles.metaBlock}>
           <h4 className={styles.metaTitle}>Notes ingrédients</h4>
           <ul className={styles.metaList}>

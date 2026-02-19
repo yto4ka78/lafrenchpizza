@@ -24,14 +24,20 @@ export default function Hero() {
 
       <div className={styles.container}>
         <img
-          src="https://res.cloudinary.com/dcuqusnsc/image/upload/v1771252685/line_3_pe4f2e.png"
+          src="/lafrenchpizzaline_n6tiq1.webp"
           alt=""
           className={styles.decorativePatternLeft}
+          fetchPriority="low"
         />
         <div className={styles.content}>
+          <h1 className={styles.srOnly}>
+            LA FRENCH PIZZA — Pizzeria Orléans, pizza à emporter
+          </h1>
           <div className={styles.offer}>
             <span className={styles.smallLabel}>Offre spéciale</span>
-            <h1 className={styles.bigOffer}>Pizza achetée</h1>
+            <p className={styles.bigOffer} aria-hidden="true">
+              Pizza achetée
+            </p>
             <span className={styles.freeEquals}>=</span>
             <div className={styles.freeLine}>
               <span className={styles.freeNumber}>1</span>
@@ -48,8 +54,12 @@ export default function Hero() {
           <p className={styles.quality}>Ingrédients de qualité</p>
 
           <div className={styles.ctaButtons}>
-            <Link to="/menu" className={styles.primaryButton}>Voir le menu</Link>
-            <Link to="/contact" className={styles.secondaryButton}>Nos coordonnées</Link>
+            <Link to="/menu" className={styles.primaryButton}>
+              Voir le menu
+            </Link>
+            <Link to="/contact" className={styles.secondaryButton}>
+              Nos coordonnées
+            </Link>
           </div>
           <div className={styles.phoneSection}>
             <svg
@@ -75,9 +85,10 @@ export default function Hero() {
           </p>
         </div>
         <img
-          src="https://res.cloudinary.com/dcuqusnsc/image/upload/v1771252685/line_3_pe4f2e.png"
+          src="/lafrenchpizzaline_n6tiq1.webp"
           alt=""
           className={styles.decorativePatternRight}
+          fetchPriority="low"
         />
       </div>
 

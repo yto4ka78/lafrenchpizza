@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Process.module.css";
 
 const steps = [
@@ -35,6 +36,11 @@ export default function Process() {
             </div>
           ))}
         </div>
+        <p className={styles.cta}>
+          <Link to="/contact" className={styles.ctaLink}>
+            Commander par téléphone →
+          </Link>
+        </p>
       </div>
     </section>
   );

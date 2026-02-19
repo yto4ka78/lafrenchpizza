@@ -1,60 +1,6 @@
-const PIZZA_IMAGES = {
-  margherita:
-    "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=600&fit=crop",
-  vegetarienne:
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop",
-  regina:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
-  pecheur:
-    "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&h=600&fit=crop",
-  fromages:
-    "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=600&fit=crop",
-  calzone:
-    "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=600&fit=crop",
-  fruitsDeMer:
-    "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&h=600&fit=crop",
-  quatreSaisons:
-    "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=600&fit=crop",
-  chorizo:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
-  paysanne:
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop",
-  chevreMiel:
-    "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=600&fit=crop",
-  fermiere:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
-  chicken:
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop",
-  buffalo:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
-  napolitaine:
-    "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=600&fit=crop",
-  hawaienne:
-    "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=600&fit=crop",
-  orientale:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
-  piquante:
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop",
-  mexicaine:
-    "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=600&fit=crop",
-  americaine:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
-  indienne:
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop",
-  streetKebab:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
-  cannibale:
-    "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=600&fit=crop",
-  campagnarde:
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop",
-  laFrench:
-    "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=600&fit=crop",
-  savoyarde:
-    "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=600&fit=crop",
-  norvegienne:
-    "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&h=600&fit=crop",
-  orleanaise:
-    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&h=600&fit=crop",
+const PIZZA_IMAGE = {
+  mobile: "/pizzas/lafrenchpizzapizza_768px.webp",
+  desktop: "/pizzas/lafrenchpizzapizza_1000px.webp",
 };
 
 const PRICES = { junior: 9, senior: 17, mega: 24 };
@@ -72,48 +18,48 @@ export const menuSections = [
           {
             name: "Margherita",
             ingredients: "Double Mozzarella",
-            image: PIZZA_IMAGES.margherita,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Végétarienne",
             ingredients:
               "Mozzarella, Tomates cerises, Poivrons, Olives, Champignons",
-            image: PIZZA_IMAGES.vegetarienne,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Regina",
             ingredients: "Mozzarella, Jambon¹, Champignons",
-            image: PIZZA_IMAGES.regina,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Pêcheur",
             ingredients: "Mozzarella, Thon, Oignons, Olives",
-            image: PIZZA_IMAGES.pecheur,
+            image: PIZZA_IMAGE,
           },
           {
             name: "4 Fromages",
             ingredients: "Mozzarella, Chèvre, Bleu, Parmesan",
-            image: PIZZA_IMAGES.fromages,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Calzone",
             ingredients: "Mozzarella, Jambon¹, Œuf",
-            image: PIZZA_IMAGES.calzone,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Fruits de mer",
             ingredients: "Mozzarella, Fruits de mer, Persillade",
-            image: PIZZA_IMAGES.fruitsDeMer,
+            image: PIZZA_IMAGE,
           },
           {
             name: "4 saisons",
             ingredients: "Mozzarella, Jambon¹, Artichauts, Olives, Champignons",
-            image: PIZZA_IMAGES.quatreSaisons,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Chorizo",
             ingredients: "Mozzarella, Chorizo², Olive, Oignons",
-            image: PIZZA_IMAGES.chorizo,
+            image: PIZZA_IMAGE,
           },
         ],
       },
@@ -125,29 +71,29 @@ export const menuSections = [
           {
             name: "Paysanne",
             ingredients: "Mozzarella, Jambon¹, Pomme de terre, Oignons",
-            image: PIZZA_IMAGES.paysanne,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Chèvre Miel",
             ingredients: "Mozzarella, Chèvre frais, Parmesan, Miel",
-            image: PIZZA_IMAGES.chevreMiel,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Fermière",
             ingredients: "Mozzarella, Poulet fumé, Pomme de terre",
-            image: PIZZA_IMAGES.fermiere,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Chicken",
             ingredients:
               "Mozzarella, Poulet Tikka, Pomme de terre, Champignons",
-            image: PIZZA_IMAGES.chicken,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Buffalo",
             ingredients:
               "Mozzarella, Poulet Tikka, Poivrons, Oignons, Sauce Barbecue",
-            image: PIZZA_IMAGES.buffalo,
+            image: PIZZA_IMAGE,
           },
         ],
       },
@@ -165,49 +111,49 @@ export const menuSections = [
           {
             name: "Napolitaine",
             ingredients: "Mozzarella, Anchois, Câpres, Olives",
-            image: PIZZA_IMAGES.napolitaine,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Hawaïenne",
             ingredients: "Mozzarella, Jambon¹, Ananas",
-            image: PIZZA_IMAGES.hawaienne,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Orientale",
             ingredients: "Mozzarella, Merguez, Poivrons, Olives, Oeuf",
-            image: PIZZA_IMAGES.orientale,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Piquante",
             ingredients: "Mozzarella, Merguez, Viande Hachée, Jalapeño",
-            image: PIZZA_IMAGES.piquante,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Mexicaine",
             ingredients: "Mozzarella, Viande hachée, Merguez, Poivrons, Olives",
-            image: PIZZA_IMAGES.mexicaine,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Américaine",
             ingredients:
               "Mozzarella, Viande hachée, Poivrons, Oignons, Sauce Barbecue",
-            image: PIZZA_IMAGES.americaine,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Indienne",
             ingredients:
               "Mozzarella, Blanc de Poulet, Poulet Curry, Pomme de terre",
-            image: PIZZA_IMAGES.indienne,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Street Kebab",
             ingredients: "Mozzarella, Kebab, Pomme de terre, Oignons",
-            image: PIZZA_IMAGES.streetKebab,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Cannibale",
             ingredients: "Mozzarella, Poulet fumé, Chorizo, Lardons³",
-            image: PIZZA_IMAGES.cannibale,
+            image: PIZZA_IMAGE,
           },
         ],
       },
@@ -219,27 +165,27 @@ export const menuSections = [
           {
             name: "Campagnarde",
             ingredients: "Mozzarella, Jambon¹, Pomme de Terre, Œuf",
-            image: PIZZA_IMAGES.campagnarde,
+            image: PIZZA_IMAGE,
           },
           {
             name: "la French",
             ingredients: "Mozzarella, Jambon¹, Chèvre, Pomme de terre",
-            image: PIZZA_IMAGES.laFrench,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Savoyarde",
             ingredients: "Mozzarella, Lardons³, Pomme de terre, Reblochon",
-            image: PIZZA_IMAGES.savoyarde,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Norvégienne",
             ingredients: "Mozzarella, Saumon fumé, Pomme de terre",
-            image: PIZZA_IMAGES.norvegienne,
+            image: PIZZA_IMAGE,
           },
           {
             name: "Orléanaise",
             ingredients: "Mozzarella, Moutarde, Poulet fumé, Oignons",
-            image: PIZZA_IMAGES.orleanaise,
+            image: PIZZA_IMAGE,
           },
         ],
       },
@@ -273,51 +219,15 @@ export const drinks = {
   title: "Boissons",
   subtitle: "Boissons fraîches pour accompagner votre pizza",
   items: [
-    {
-      name: "Pepsi",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270414/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_33_26_ldipbf.png",
-    },
-    {
-      name: "Pepsi Max",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270509/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_35_00_m1xfym.png",
-    },
-    {
-      name: "7up",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771269913/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_24_35_maeqxj.png",
-    },
-    {
-      name: "Sprite",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270015/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_26_19_t0956j.png",
-    },
-    {
-      name: "Fanta",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270083/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_27_32_jkcgnl.png",
-    },
-    {
-      name: "Lipton Ice Tea",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270151/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_28_47_gjtmpd.png",
-    },
-    {
-      name: "Coca-Cola",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771269915/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_20_02_kamsir.png",
-    },
-    {
-      name: "Oasis",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270216/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_30_07_iu1uj3.png",
-    },
-    {
-      name: "Orangina",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771270317/ChatGPT_Image_16_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._20_31_40_xsjjde.png",
-    },
+    { name: "Pepsi", image: "/lafrenchpizaapepsi.webp" },
+    { name: "Pepsi Max", image: "/lafrenchpizaapepsimax.webp" },
+    { name: "7up", image: "/lafrenchpizaa7up.webp" },
+    { name: "Sprite", image: "/lafrenchpizaasprite.webp" },
+    { name: "Fanta", image: "/lafrenchpizaafanta.webp" },
+    { name: "Lipton Ice Tea", image: "/lafrenchpizaalipton.webp" },
+    { name: "Coca-Cola", image: "/lafrenchpizaaCocaCola.webp" },
+    { name: "Oasis", image: "/lafrenchpizaaoasis.webp" },
+    { name: "Orangina", image: "/lafrenchpizaaorangina.webp" },
   ],
   prices: [
     { size: "Canette 33 cl", price: "2,00", recommended: false },
@@ -333,29 +243,25 @@ export const desserts = {
     {
       name: "Haagen-Dazs",
       description: "Parfums au choix",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_03_04_fb6vcp.png",
+      image: "/lafrenchpizaahaagen_dazs.webp",
       prices: ["150ml 3.50€", "500ml 6.50€"],
     },
     {
       name: "Tiramisu",
       description: "Parfums au choix",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_08_38_w4tcxz.png",
+      image: "/lafrenchpizaatiramisu.webp",
       prices: ["3.00€"],
     },
     {
       name: "Tarte daim",
       description: "",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_21_41_ttedra.png",
+      image: "/lafrenchpizaaTarteDaim.webp",
       prices: ["3.00€"],
     },
     {
       name: "Muffins",
       description: "",
-      image:
-        "https://res.cloudinary.com/dcuqusnsc/image/upload/v1771334726/ChatGPT_Image_17_%D1%84%D0%B5%D0%B2%D1%80._2026_%D0%B3._14_24_51_akl6ug.png",
+      image: "/lafrenchpizaamufin.webp",
       prices: ["3.00€"],
     },
   ],
@@ -377,32 +283,32 @@ export const featuredPizzas = [
   {
     name: "Margherita",
     ingredients: "Double Mozzarella",
-    image: PIZZA_IMAGES.margherita,
+    image: PIZZA_IMAGE,
   },
   {
     name: "4 Fromages",
     ingredients: "Mozzarella, Chèvre, Bleu, Parmesan",
-    image: PIZZA_IMAGES.fromages,
+    image: PIZZA_IMAGE,
   },
   {
     name: "la French",
     ingredients: "Mozzarella, Jambon¹, Chèvre, Pomme de terre",
-    image: PIZZA_IMAGES.laFrench,
+    image: PIZZA_IMAGE,
   },
   {
     name: "Napolitaine",
     ingredients: "Mozzarella, Anchois, Câpres, Olives",
-    image: PIZZA_IMAGES.napolitaine,
+    image: PIZZA_IMAGE,
   },
   {
     name: "Chèvre Miel",
     ingredients: "Mozzarella, Chèvre frais, Parmesan, Miel",
-    image: PIZZA_IMAGES.chevreMiel,
+    image: PIZZA_IMAGE,
   },
   {
     name: "Savoyarde",
     ingredients: "Mozzarella, Lardons³, Pomme de terre, Reblochon",
-    image: PIZZA_IMAGES.savoyarde,
+    image: PIZZA_IMAGE,
   },
 ];
 

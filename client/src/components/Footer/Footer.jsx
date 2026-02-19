@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -20,17 +21,12 @@ export default function Footer() {
           <p>Lundi : Fermé</p>
         </div>
         <div className={styles.section}>
-          <h3>Restez connecté</h3>
-          <p>Recevez nos spécialités hebdomadaires</p>
-          <form className={styles.form}>
-            <input type="email" placeholder="Votre email" />
-            <button type="submit">S'inscrire</button>
-          </form>
-          <div className={styles.social}>
-            <a href="#">IG</a>
-            <a href="#">FB</a>
-            <a href="#">TW</a>
-          </div>
+          <h3>Liens</h3>
+          <p><Link to="/">Accueil</Link></p>
+          <p><Link to="/menu">Menu</Link></p>
+          <p><Link to="/about">À propos</Link></p>
+          <p><Link to="/contact">Contact</Link></p>
+          <p><Link to="/faq">FAQ</Link></p>
         </div>
       </div>
       <div className={styles.bottom}>

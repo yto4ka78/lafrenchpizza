@@ -82,6 +82,24 @@
   margin-left: 1rem;
 }
 
+.cta {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.ctaLink {
+  display: inline-block;
+  color: var(--accent, #e8c547);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.ctaLink:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .process {
     padding: 3rem 1.5rem;

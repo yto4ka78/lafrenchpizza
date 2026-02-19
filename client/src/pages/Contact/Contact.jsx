@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Contact.module.css";
 
 const CONTACT_DATA = {
@@ -25,53 +26,16 @@ const CONTACT_DATA = {
 export default function Contact() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Restaurant",
-            name: CONTACT_DATA.businessName,
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: CONTACT_DATA.address,
-              addressLocality: "Orléans",
-              postalCode: "45000",
-              addressCountry: "FR",
-            },
-            telephone: CONTACT_DATA.phone,
-            email: CONTACT_DATA.email,
-            openingHoursSpecification: [
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Tuesday", "Wednesday", "Thursday"],
-                opens: "17:00",
-                closes: "22:00",
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Friday", "Saturday"],
-                opens: "17:00",
-                closes: "23:00",
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: "Sunday",
-                opens: "16:00",
-                closes: "21:00",
-              },
-            ],
-          }),
-        }}
-      />
-
       <div className={styles.page}>
         <section className={styles.hero}>
           <div className={styles.container}>
             <h1 className={styles.heroTitle}>Emplacement & Contact</h1>
             <p className={styles.heroSubtitle}>
-              Retrouvez-nous à Orléans ou contactez-nous directement. Nous
-              sommes là pour répondre à toutes vos questions.
+              Retrouvez-nous à Orléans ou contactez-nous directement.
+            </p>
+            <p className={styles.heroSubtitle}>
+              <Link to="/menu">Voir notre menu</Link> ·{" "}
+              <Link to="/faq">FAQ</Link>
             </p>
           </div>
         </section>
@@ -88,20 +52,26 @@ export default function Contact() {
                       className={styles.pizzaPanelLink}
                     >
                       <span className={styles.pizzaPanelLabel}>Téléphone</span>
-                      <span className={styles.pizzaPanelValue}>{CONTACT_DATA.phone}</span>
+                      <span className={styles.pizzaPanelValue}>
+                        {CONTACT_DATA.phone}
+                      </span>
                     </a>
                     <a
                       href={`mailto:${CONTACT_DATA.email}`}
                       className={styles.pizzaPanelLink}
                     >
                       <span className={styles.pizzaPanelLabel}>Email</span>
-                      <span className={styles.pizzaPanelValue}>{CONTACT_DATA.email}</span>
+                      <span className={styles.pizzaPanelValue}>
+                        {CONTACT_DATA.email}
+                      </span>
                     </a>
                   </div>
 
                   {CONTACT_DATA.socialLinks.length > 0 && (
                     <div className={styles.pizzaPanelSocial}>
-                      <span className={styles.pizzaPanelLabel}>Suivez-nous</span>
+                      <span className={styles.pizzaPanelLabel}>
+                        Suivez-nous
+                      </span>
                       <div className={styles.pizzaPanelSocialLinks}>
                         {CONTACT_DATA.socialLinks.map((social, index) => (
                           <a
@@ -118,16 +88,22 @@ export default function Contact() {
                     </div>
                   )}
 
-                  <h2 className={styles.pizzaPanelTitleSecondary}>Horaires d'ouverture</h2>
+                  <h2 className={styles.pizzaPanelTitleSecondary}>
+                    Horaires d'ouverture
+                  </h2>
                   <div className={styles.pizzaPanelHours}>
                     {Object.entries(CONTACT_DATA.hours).map(([day, hours]) => (
                       <div key={day} className={styles.pizzaPanelHoursRow}>
                         <span className={styles.pizzaPanelHoursDay}>{day}</span>
-                        <span className={styles.pizzaPanelHoursTime}>{hours}</span>
+                        <span className={styles.pizzaPanelHoursTime}>
+                          {hours}
+                        </span>
                       </div>
                     ))}
                   </div>
-                  <p className={styles.pizzaPanelReassurance}>Nous répondons sous 24h</p>
+                  <p className={styles.pizzaPanelReassurance}>
+                    Nous répondons sous 24h
+                  </p>
                 </div>
               </div>
 

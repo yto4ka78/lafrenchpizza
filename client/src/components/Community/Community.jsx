@@ -4,57 +4,49 @@ import styles from "./Community.module.css";
 const galleryItems = [
   {
     id: 1,
-    image:
-      "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200&h=1600&fit=crop",
+    image: "/galery/lafrenchpizzaGalery_4.webp",
     caption: "Pizza Margherita",
     description: "Tomates San Marzano, mozzarella di bufala",
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=800&fit=crop",
+    image: "/galery/lafrenchpizzaGalery_2.webp",
     caption: "Notre cuisine",
     description: "Derrière le four à bois",
   },
   {
     id: 3,
-    image:
-      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&h=800&fit=crop",
+    image: "/galery/lafrenchpizzaGalery_5.webp",
     caption: "Sélection de vins",
     description: "Vins naturels de qualité",
   },
   {
     id: 4,
-    image:
-      "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=1200&h=800&fit=crop",
-    caption: "Four à bois",
-    description: "Cuisson traditionnelle à 480°C",
+    image: "/galery/lafrenchpizzaGalery_1.webp",
+    caption: "Boissons",
+    description: "Coca-Cola, Sprite, Fanta et autres softs",
   },
   {
     id: 5,
-    image:
-      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&h=800&fit=crop",
+    image: "/galery/lafrenchpizzaGalery_3.webp",
     caption: "Ingrédients frais",
     description: "Herbes du jardin",
   },
   {
     id: 6,
-    image:
-      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&h=800&fit=crop",
+    image: "/galery/lafrenchpizzaGalery_6.webp",
     caption: "Fromages artisanaux",
     description: "Sélection locale",
   },
   {
     id: 7,
-    image:
-      "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=1200&fit=crop",
+    image: "/galery/lafrenchpizzaGalery_7.webp",
     caption: "Levain maison",
     description: "Fermentation 72 heures",
   },
   {
     id: 8,
-    image:
-      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=800&fit=crop",
+    image: "/galery/lafrenchpizzaGalery_8.webp",
     caption: "Tomates San Marzano",
     description: "Ingrédients d'exception",
   },

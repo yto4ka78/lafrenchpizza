@@ -23,12 +23,21 @@ export default function Menu({ preview = false }) {
             {featuredPizzas.slice(0, 4).map((pizza) => (
               <li key={pizza.name} className={styles.card}>
                 <div className={styles.cardImageWrap}>
-                  <img
-                    src={pizza.image}
-                    alt={pizza.name}
-                    className={styles.cardImage}
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcSet={pizza.image.mobile}
+                    />
+                    <img
+                      src={pizza.image.desktop}
+                      alt={pizza.name}
+                      className={styles.cardImage}
+                      loading="lazy"
+                      decoding="async"
+                      width={400}
+                      height={400}
+                    />
+                  </picture>
                 </div>
                 <div className={styles.cardBody}>
                   <h4 className={styles.cardName}>{pizza.name}</h4>
@@ -79,12 +88,20 @@ export default function Menu({ preview = false }) {
                   {base.pizzas.map((pizza) => (
                     <li key={pizza.name} className={styles.card}>
                       <div className={styles.cardImageWrap}>
-                        <img
-                          src={pizza.image}
-                          alt={pizza.name}
-                          className={styles.cardImage}
-                          loading="lazy"
-                        />
+                        <picture>
+                          <source
+                            media="(max-width: 768px)"
+                            srcSet={pizza.image.mobile}
+                          />
+                          <img
+                            src={pizza.image.desktop}
+                            alt={pizza.name}
+                            className={styles.cardImage}
+                            loading="lazy"
+                            width={400}
+                            height={400}
+                          />
+                        </picture>
                       </div>
                       <div className={styles.cardBody}>
                         <h4 className={styles.cardName}>{pizza.name}</h4>
@@ -127,6 +144,9 @@ export default function Menu({ preview = false }) {
                     src={item.image}
                     alt={item.name}
                     className={styles.drinkImage}
+                    loading="lazy"
+                    width={400}
+                    height={380}
                   />
                 </div>
                 <div className={styles.drinkCardBody}>
@@ -159,6 +179,8 @@ export default function Menu({ preview = false }) {
                     alt={item.name}
                     className={styles.drinkImage}
                     loading="lazy"
+                    width={400}
+                    height={380}
                   />
                 </div>
                 <div className={styles.drinkCardBody}>

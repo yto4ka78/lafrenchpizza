@@ -52,6 +52,11 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
+            <Link to="/faq" className={isActive('/faq') ? styles.active : ''}>
+              FAQ
+            </Link>
+          </li>
+          <li>
             <Link to="/about" className={isActive('/about') ? styles.active : ''}>
               À propos
             </Link>
@@ -84,6 +89,11 @@ export default function Navigation() {
           <li>
             <Link to="/contact" className={isActive('/contact') ? styles.active : ''}>
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="/faq" className={isActive('/faq') ? styles.active : ''}>
+              FAQ
             </Link>
           </li>
           <li>

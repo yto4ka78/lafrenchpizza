@@ -7,9 +7,9 @@ export default function AboutV2() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroDecor}>✦</div>
-          <h1 className={styles.heroTitle}>Notre Histoire</h1>
+          <h1 className={styles.heroTitle}>Notre Histoire — Pizzeria à Orléans</h1>
           <p className={styles.heroSubtitle}>
-            Un voyage culinaire de passion et d'authenticité
+            Une pizzeria née d'une passion pour les pizzas authentiques au levain
           </p>
           <div className={styles.heroDecor}>✦</div>
         </div>
@@ -30,9 +30,12 @@ export default function AboutV2() {
             </div>
             <div className={styles.timelineImage}>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&h=600&fit=crop"
+                src="/histoiry/lafrenchpizza_histoire_1.webp"
                 alt="Le début de notre histoire"
                 className={styles.timelineImg}
+                loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -50,9 +53,12 @@ export default function AboutV2() {
             </div>
             <div className={styles.timelineImage}>
               <img
-                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&h=600&fit=crop"
+                src="/histoiry/lafrenchpizza_histoire_2.webp"
                 alt="Notre philosophie"
                 className={styles.timelineImg}
+                loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -70,9 +76,12 @@ export default function AboutV2() {
             </div>
             <div className={styles.timelineImage}>
               <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=600&fit=crop"
+                src="/histoiry/lafrenchpizza_histoire_3.webp"
                 alt="L'excellence culinaire"
                 className={styles.timelineImg}
+                loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -90,9 +99,12 @@ export default function AboutV2() {
             </div>
             <div className={styles.timelineImage}>
               <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop"
+                src="/another/lafrenchpizza_background_restaurant.webp"
                 alt="Notre pizzeria aujourd'hui"
                 className={styles.timelineImg}
+                loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -113,9 +125,14 @@ export default function AboutV2() {
           <p className={styles.heroCtaSubtitle}>
             Bienvenue chez La French Pizza 🍕
           </p>
-          <Link to="/menu" className={styles.heroCtaButton}>
-            Voir notre carte
-          </Link>
+          <div className={styles.heroCtaButtons}>
+            <Link to="/menu" className={styles.heroCtaButton}>
+              Voir notre carte
+            </Link>
+            <Link to="/contact" className={styles.heroCtaButtonSecondary}>
+              Nous contacter
+            </Link>
+          </div>
         </div>
       </section>
     </div>
