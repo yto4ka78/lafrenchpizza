@@ -3,6 +3,11 @@ const PIZZA_IMAGE = {
   desktop: "/pizzas/lafrenchpizzapizza_1000px.webp",
 };
 
+const pizzaPhoto = (path) => ({
+  mobile: path,
+  desktop: path,
+});
+
 const PRICES = { junior: 9, senior: 17, mega: 24 };
 
 export const menuSections = [
@@ -18,7 +23,7 @@ export const menuSections = [
           {
             name: "Margherita",
             ingredients: "Double Mozzarella",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Marguerita.webp"),
           },
           {
             name: "Végétarienne",
@@ -39,7 +44,7 @@ export const menuSections = [
           {
             name: "4 Fromages",
             ingredients: "Mozzarella, Chèvre, Bleu, Parmesan",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/4 fromages.webp"),
           },
           {
             name: "Calzone",
@@ -76,7 +81,7 @@ export const menuSections = [
           {
             name: "Chèvre Miel",
             ingredients: "Mozzarella, Chèvre frais, Parmesan, Miel",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Chèvre miel.webp"),
           },
           {
             name: "Fermière",
@@ -87,7 +92,7 @@ export const menuSections = [
             name: "Chicken",
             ingredients:
               "Mozzarella, Poulet Tikka, Pomme de terre, Champignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Chicken.webp"),
           },
           {
             name: "Buffalo",
@@ -121,12 +126,12 @@ export const menuSections = [
           {
             name: "Orientale",
             ingredients: "Mozzarella, Merguez, Poivrons, Olives, Oeuf",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Orientale.webp"),
           },
           {
             name: "Piquante",
             ingredients: "Mozzarella, Merguez, Viande Hachée, Jalapeño",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Piquante.webp"),
           },
           {
             name: "Mexicaine",
@@ -180,7 +185,7 @@ export const menuSections = [
           {
             name: "Norvégienne",
             ingredients: "Mozzarella, Saumon fumé, Pomme de terre",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Norvégienne.webp"),
           },
           {
             name: "Orléanaise",
@@ -283,12 +288,12 @@ export const featuredPizzas = [
   {
     name: "Margherita",
     ingredients: "Double Mozzarella",
-    image: PIZZA_IMAGE,
+    image: pizzaPhoto("/pizzas/classical/Marguerita.webp"),
   },
   {
     name: "4 Fromages",
     ingredients: "Mozzarella, Chèvre, Bleu, Parmesan",
-    image: PIZZA_IMAGE,
+    image: pizzaPhoto("/pizzas/classical/4 fromages.webp"),
   },
   {
     name: "la French",
@@ -303,7 +308,7 @@ export const featuredPizzas = [
   {
     name: "Chèvre Miel",
     ingredients: "Mozzarella, Chèvre frais, Parmesan, Miel",
-    image: PIZZA_IMAGE,
+    image: pizzaPhoto("/pizzas/classical/Chèvre miel.webp"),
   },
   {
     name: "Savoyarde",
