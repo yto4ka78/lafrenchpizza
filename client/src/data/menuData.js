@@ -29,42 +29,42 @@ export const menuSections = [
             name: "Végétarienne",
             ingredients:
               "Mozzarella, Tomates cerises, Poivrons, Olives, Champignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Végétarienne.webp"),
           },
           {
             name: "Regina",
             ingredients: "Mozzarella, Jambon¹, Champignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Regina.webp"),
           },
           {
             name: "Pêcheur",
             ingredients: "Mozzarella, Thon, Oignons, Olives",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Pêcheur.webp"),
           },
           {
             name: "4 Fromages",
             ingredients: "Mozzarella, Chèvre, Bleu, Parmesan",
-            image: pizzaPhoto("/pizzas/classical/4 fromages.webp"),
+            image: pizzaPhoto("/pizzas/classical/4-fromages.webp"),
           },
           {
             name: "Calzone",
             ingredients: "Mozzarella, Jambon¹, Œuf",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Calzone.webp"),
           },
           {
             name: "Fruits de mer",
             ingredients: "Mozzarella, Fruits de mer, Persillade",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Fruits de mer.webp"),
           },
           {
             name: "4 saisons",
             ingredients: "Mozzarella, Jambon¹, Artichauts, Olives, Champignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/4 saisons.webp"),
           },
           {
             name: "Chorizo",
             ingredients: "Mozzarella, Chorizo², Olive, Oignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Chorizo.webp"),
           },
         ],
       },
@@ -76,7 +76,7 @@ export const menuSections = [
           {
             name: "Paysanne",
             ingredients: "Mozzarella, Jambon¹, Pomme de terre, Oignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Paysanne.webp"),
           },
           {
             name: "Chèvre Miel",
@@ -86,7 +86,7 @@ export const menuSections = [
           {
             name: "Fermière",
             ingredients: "Mozzarella, Poulet fumé, Pomme de terre",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Fermière.webp"),
           },
           {
             name: "Chicken",
@@ -98,7 +98,7 @@ export const menuSections = [
             name: "Buffalo",
             ingredients:
               "Mozzarella, Poulet Tikka, Poivrons, Oignons, Sauce Barbecue",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/classical/Buffalo.webp"),
           },
         ],
       },
@@ -116,12 +116,12 @@ export const menuSections = [
           {
             name: "Napolitaine",
             ingredients: "Mozzarella, Anchois, Câpres, Olives",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Napolitaine.webp"),
           },
           {
             name: "Hawaïenne",
             ingredients: "Mozzarella, Jambon¹, Ananas",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Hawaïenne.webp"),
           },
           {
             name: "Orientale",
@@ -142,23 +142,23 @@ export const menuSections = [
             name: "Américaine",
             ingredients:
               "Mozzarella, Viande hachée, Poivrons, Oignons, Sauce Barbecue",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Américaine.webp"),
           },
           {
             name: "Indienne",
             ingredients:
               "Mozzarella, Blanc de Poulet, Poulet Curry, Pomme de terre",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Indienne.webp"),
           },
           {
             name: "Street Kebab",
             ingredients: "Mozzarella, Kebab, Pomme de terre, Oignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Street-Kebab.webp"),
           },
           {
             name: "Cannibale",
             ingredients: "Mozzarella, Poulet fumé, Chorizo, Lardons³",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Cannibale.webp"),
           },
         ],
       },
@@ -170,17 +170,17 @@ export const menuSections = [
           {
             name: "Campagnarde",
             ingredients: "Mozzarella, Jambon¹, Pomme de Terre, Œuf",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Campagnarde.webp"),
           },
           {
             name: "la French",
             ingredients: "Mozzarella, Jambon¹, Chèvre, Pomme de terre",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/la-French.webp"),
           },
           {
             name: "Savoyarde",
             ingredients: "Mozzarella, Lardons³, Pomme de terre, Reblochon",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Savoyarde.webp"),
           },
           {
             name: "Norvégienne",
@@ -190,7 +190,7 @@ export const menuSections = [
           {
             name: "Orléanaise",
             ingredients: "Mozzarella, Moutarde, Poulet fumé, Oignons",
-            image: PIZZA_IMAGE,
+            image: pizzaPhoto("/pizzas/special/Orléanaise.webp"),
           },
         ],
       },
@@ -293,17 +293,17 @@ export const featuredPizzas = [
   {
     name: "4 Fromages",
     ingredients: "Mozzarella, Chèvre, Bleu, Parmesan",
-    image: pizzaPhoto("/pizzas/classical/4 fromages.webp"),
+    image: pizzaPhoto("/pizzas/classical/4-fromages.webp"),
   },
   {
     name: "la French",
     ingredients: "Mozzarella, Jambon¹, Chèvre, Pomme de terre",
-    image: PIZZA_IMAGE,
+    image: pizzaPhoto("/pizzas/special/la-French.webp"),
   },
   {
     name: "Napolitaine",
     ingredients: "Mozzarella, Anchois, Câpres, Olives",
-    image: PIZZA_IMAGE,
+    image: pizzaPhoto("/pizzas/special/Napolitaine.webp"),
   },
   {
     name: "Chèvre Miel",
@@ -313,7 +313,7 @@ export const featuredPizzas = [
   {
     name: "Savoyarde",
     ingredients: "Mozzarella, Lardons³, Pomme de terre, Reblochon",
-    image: PIZZA_IMAGE,
+    image: pizzaPhoto("/pizzas/special/Savoyarde.webp"),
   },
 ];
 
